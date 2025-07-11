@@ -6,7 +6,7 @@ const genre = document.getElementById('genre').value;
 const language = document.getElementById('language').value;
 
 
-  const res = await fetch('http://localhost:3000/recommend', {
+  const res = await fetch('https://mayukh30.github.io/spotify_recommender/recommend', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ mood, activity, genre,language })
